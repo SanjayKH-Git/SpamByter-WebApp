@@ -1,1 +1,1 @@
-web: gunicorn SpamByterApp.wsgi
+web: gunicorn spambyterdjango.wsgi
