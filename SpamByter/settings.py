@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'SpamByter.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'spambyter_db',
-        'USER': 'postgres',
-        'PASSWORD': 'sanpost',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd81jbq5ufjrhnq',
+        'USER': 'govxqkzkwhjdec',
+        'PASSWORD': '9971200c6384d2bb2dbe5f4c7f3081449d8d106656bc6375268c28b3995b4642',
+        'HOST': 'ec2-35-153-91-18.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
