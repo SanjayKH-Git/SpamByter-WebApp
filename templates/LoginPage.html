@@ -10,7 +10,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 
-    <title>SpamByter Register</title>
+    <title>SpamByter Login</title>
 </head>
 <body>
 <div class="app">
@@ -22,15 +22,14 @@
       </div>
 
       <div class="LoginBtn">
-          Already have Account? <a href="LoginPage" > <b style="color: rgb(20,200,10)">Login</b></a>
+          Not Registered? <a href="/SpamByterApp/" > <b style="color: rgb(20,200,10)">SignUp</b></a>
       </div>
     <div class="button">
-      <div class="sign-up">SIGN UP</div>
+      <div class="sign-up">LOGIN</div>
           {% block content %}
-          <form class="hidden form" enctype="multipart/form-data" method="post" action="Register">
+          <form class="hidden form" enctype="multipart/form-data" method="post" action="Login">
               {% csrf_token %}
-            <input type="email" placeholder="Email Id" name="email" required/>
-            <input type="number" placeholder="Phone No" name="PhoneNo" required/>
+            <input type="number" placeholder="Registered Phone No" name="PhoneNo" required/>
             <input type="password" placeholder="Password" name="pswd" required/>
 
             <button class="hidden" type="submit" value="Register"><span class="text">DONE</span></button>

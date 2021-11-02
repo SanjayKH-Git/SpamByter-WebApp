@@ -18,8 +18,8 @@ body {
 }
 
 .content {
-  background: #5E2E91 url("https://www.svgrepo.com/show/50164/spam.svg") center 20% no-repeat;
-  background-size: 75px;
+  background: #5E2E91 url("https://www.svgrepo.com/show/50164/spam.svg") center 18% no-repeat;
+  background-size: 65px;
   height: 100%;
   width: 100%;
   transition: 0.3s 0.2s;
@@ -27,6 +27,11 @@ body {
 .content.background {
   background: #5E2E91 url("https://www.svgrepo.com/show/50164/spam.svg") center 15% no-repeat;
   background-size: 75px;
+}
+.LoginBtn {
+    color: rgba(250, 150, 200, 1);
+    padding:65px 25px;
+    text-align: center;
 }
 .Disclaimer {
     padding:5px 10px;
@@ -59,7 +64,7 @@ body {
   width: 100%;
   top: 0;
   border-radius: 0;
-  background: #F9F9F9 url("https://cbwconline.com/IMG/Codepen/Background.svg") no-repeat;
+  background: #F9F9F9 url("https://www.svgrepo.com/show/50164/spam.svg") no-repeat;
   background-size: 100%;
   background-position: 0 0;
   transition: 0.5s;
@@ -147,7 +152,7 @@ button.fab {
 }
 
 .header {
-  background: #5E2E91 url("https://cbwconline.com/IMG/Codepen/Menu.svg") 8% 50% no-repeat;
+  background: #5E2E91 url("https://www.svgrepo.com/show/50164/spam.svg") 8% 50% no-repeat;
   width: 100%;
   height: 80px;
   position: absolute;
